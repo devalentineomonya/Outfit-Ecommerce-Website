@@ -1,7 +1,10 @@
+"use client";
 import { IoMdSearch } from "react-icons/io";
 import { IoBagHandleOutline } from "react-icons/io5";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { TbMenu } from "react-icons/tb";
+import { TbX } from "react-icons/tb";
 const navbarItems = [
   {
     name: "Home",
@@ -30,7 +33,7 @@ const iconItems = [
     href: "/cart",
   },
   {
-    icon: <IoMdSearch size={20}/>,
+    icon: <IoMdSearch size={20} />,
     href: "/search",
   },
   {
@@ -38,37 +41,55 @@ const iconItems = [
     href: "/login",
   },
 ];
+
 const LowerNavbar = () => {
+  const [showSideMenu, setShowSideMenu] = useState(false);
+  function toggleSidebar() {
+    setShowSideMenu(!showSideMenu);
+  }
   return (
     <div className="h-14 w-full flex justify-center items-center dark:bg-slate-950 bg-gray-50">
       <div className="max-w-[1400px] w-full flex justify-between items-center ">
-        <nav className="dark:text-white text-slate-600 font-semibold ">
-          <ul className="flex justify-center items-center gap-x-4 w-full">
+        <div
+          className="md:hidden pl-6 dark:text-white text-slate-600 font-semibold  hover:text-slate-950 dark:hover:text-slate-300 cursor-pointer "
+          onClick={() => toggleSidebar()}
+        >
+          <TbMenu
+            size={36}
+            className={`${showSideMenu ? "block" : "hidden"}`}
+          />
+          <TbX size={36} className={`${showSideMenu ? "hidden" : "block"}`} />
+        </div>
+        <nav
+          className={`dark:text-white text-slate-600 font-semibold fixed w-1/2 h-full md:static md:w-full md:h-fit md:shadow-none shadow-[26px_-1px_25px_-25px_rgba(204,204,204,0.74)] top-28 transition-all ease-in-out duration-300 ${
+            showSideMenu ? "left-[-500px]" : "left-0"
+          }`}
+        >
+          <ul className="flex  flex-start flex-col  gap-x-4 w-full px-2 md:flex-row md:justify-center md:items-center cursor-pointer">
             {navbarItems &&
               navbarItems.map((navbarItem, i) => (
                 <li
                   key={i}
-                  className="hover:text-slate-950 dark:hover:text-slate-300 whitespace-nowrap"
+                  className="hover:text-slate-950 dark:hover:text-slate-300 whitespace-nowrap mt-6 md:mt-0"
                 >
                   <Link href={navbarItem.href}>{navbarItem.name}</Link>
                 </li>
               ))}
           </ul>
         </nav>
-        <div className="font-bold text-2xl flex justify-center items-center w-full pl-10 text-slate-700 whitespace-nowrap">
+        <div className="font-bold text-2xl flex justify-center md:justify-start items-center w-full md:pl-10 text-slate-700 whitespace-nowrap">
           KNECOMPUTER PROJECTS
         </div>
-        <div className="flex justify-center items-center gap-x-2 ">
+        <div className="flex justify-center items-center gap-x-2 pr-10 md:pr-0 ">
           {iconItems &&
             iconItems.map((iconItem, i) => (
               <div
                 key={i}
-                className="dark:text-white text-slate-600 font-semibold  hover:text-slate-950 dark:hover:text-slate-300"
+                className="dark:text-white text-slate-600 font-semibold  hover:text-slate-950 dark:hover:text-slate-300 "
               >
                 <Link href={iconItem.href}>{iconItem.icon}</Link>
               </div>
             ))}
-         
         </div>
       </div>
     </div>
