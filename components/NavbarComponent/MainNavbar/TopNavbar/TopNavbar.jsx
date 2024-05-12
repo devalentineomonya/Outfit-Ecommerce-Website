@@ -2,7 +2,7 @@ import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
-import styles from "./css/navbar.module.css"
+import styles from "../../css/navbar.module.css"
 const TopNavbar = () => {
   return (
     <div className="h-12 bg-black w-full flex justify-center items-center">
