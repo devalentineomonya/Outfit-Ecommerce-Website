@@ -9,12 +9,14 @@ export const metadata = {
 };
 
 import {Providers} from "./provider";
+import Navbar from "@/components/NavbarComponent/Navbar";
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en" className='dark'>
+    <html lang="en" className='light'>
      <body className={inter.className}>
         <Providers>
+          <Navbar/>
           {children}
         </Providers>
       </body>

@@ -1,4 +1,4 @@
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react";
 
 
 /** @type {import('tailwindcss').Config} */
@@ -17,6 +17,15 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    screens: {
+      'sm': '576px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1024px',
+      '2xl': '1200px',
+      '3xl': '1400px',
+    },
+
   },
   darkMode: "class",
   plugins: [nextui()],
