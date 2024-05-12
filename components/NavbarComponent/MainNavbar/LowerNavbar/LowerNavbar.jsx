@@ -77,7 +77,7 @@ const LowerNavbar = () => {
               ))}
           </ul>
         </nav>
-        <div className="font-bold text-2xl flex justify-center lg:justify-start items-center w-full lg:pl-10 text-slate-700 whitespace-nowrap">
+        <div className="font-bold text-lg sm:text-2xl flex justify-center lg:justify-start items-center w-full lg:pl-10 text-slate-700 whitespace-nowrap">
           KNECOMPUTER PROJECTS
         </div>
         <div className="flex justify-center items-center gap-x-2 pr-10 lg:pr-0 ">
