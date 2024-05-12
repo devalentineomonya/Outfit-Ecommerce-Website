@@ -27,14 +27,16 @@ const navbarItems = [
     href: "/about",
   },
 ];
+
+
 const iconItems = [
-  {
-    icon: <IoBagHandleOutline size={20} />,
-    href: "/cart",
-  },
   {
     icon: <IoMdSearch size={20} />,
     href: "/search",
+  },
+  {
+    icon: <IoBagHandleOutline size={20} />,
+    href: "/cart",
   },
   {
     icon: "Login",
@@ -65,14 +67,16 @@ const LowerNavbar = () => {
             showSideMenu ? "left-[-500px]" : "left-0"
           }`}
         >
-          <ul className="flex  flex-start flex-col  gap-x-4 w-full px-2 lg:flex-row lg:justify-center lg:items-center cursor-pointer">
+          <ul className="flex  flex-start flex-col  gap-x-4 w-full lg:px-2 lg:flex-row lg:justify-center lg:items-center cursor-pointer">
             {navbarItems &&
               navbarItems.map((navbarItem, i) => (
                 <li
                   key={i}
-                  className="hover:text-slate-950 dark:hover:text-slate-300 whitespace-nowrap mt-6 lg:mt-0"
+                  className="hover:text-slate-950 dark:hover:text-slate-300 whitespace-nowrap mt-6 lg:mt-0 pl-4 lg:pl-0"
                 >
-                  <Link href={navbarItem.href}>{navbarItem.name}</Link>
+                  <Link href={navbarItem.href} onClick={() => toggleSidebar()}>
+                    {navbarItem.name}
+                  </Link>
                 </li>
               ))}
           </ul>
@@ -80,7 +84,7 @@ const LowerNavbar = () => {
         <div className="font-bold text-lg sm:text-2xl flex justify-center lg:justify-start items-center w-full lg:pl-10 text-slate-700 whitespace-nowrap">
           KNECOMPUTER PROJECTS
         </div>
-        <div className="flex justify-center items-center gap-x-2 pr-10 lg:pr-0 ">
+        <div className="flex justify-center items-center gap-x-2  pr-4 lg:pr-0 ">
           {iconItems &&
             iconItems.map((iconItem, i) => (
               <div
