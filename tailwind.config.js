@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     screens: {
+      'xsm': '450',
       'sm': '576px',
       'md': '768px',
       'lg': '992px',
@@ -25,10 +26,6 @@ module.exports = {
       '2xl': '1200px',
       '3xl': '1400px',
     },
-
-    backgroundImage: {
-      'hero-image': "url('assets/images/herobg1.jpg')",
-    }
 
   },
   darkMode: "class",

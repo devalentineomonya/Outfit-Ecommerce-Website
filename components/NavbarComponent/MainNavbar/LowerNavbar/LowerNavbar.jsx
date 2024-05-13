@@ -50,7 +50,7 @@ const LowerNavbar = () => {
   }
  
   return (
-    <div className="h-14 w-full flex justify-center items-center dark:bg-slate-950 bg-gray-50 sticky top-0">
+    <div className="h-14 w-full flex justify-center items-center dark:bg-slate-950 bg-gray-50 sticky top-0 ">
       <div className="max-w-[1400px] w-full flex justify-between items-center ">
         <div
           className="lg:hidden pl-6 dark:text-white text-slate-600 font-semibold  hover:text-slate-950 dark:hover:text-slate-300 cursor-pointer "

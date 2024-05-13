@@ -4,10 +4,10 @@ import LowerNavbar from "./MainNavbar/LowerNavbar/LowerNavbar";
 
 const Navbar = () => {
   return (
-    <>
+    <div className="z-[1020]">
       <TopNavbar />
       <LowerNavbar />
-    </>
+    </div>
   );
 };
 
