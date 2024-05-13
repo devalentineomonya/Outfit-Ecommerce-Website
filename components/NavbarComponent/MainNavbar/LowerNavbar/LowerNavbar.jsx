@@ -28,7 +28,6 @@ const navbarItems = [
   },
 ];
 
-
 const iconItems = [
   {
     icon: <IoMdSearch size={20} />,
@@ -49,8 +48,9 @@ const LowerNavbar = () => {
   function toggleSidebar() {
     setShowSideMenu(!showSideMenu);
   }
+ 
   return (
-    <div className="h-14 w-full flex justify-center items-center dark:bg-slate-950 bg-gray-50">
+    <div className="h-14 w-full flex justify-center items-center dark:bg-slate-950 bg-gray-50 sticky top-0">
       <div className="max-w-[1400px] w-full flex justify-between items-center ">
         <div
           className="lg:hidden pl-6 dark:text-white text-slate-600 font-semibold  hover:text-slate-950 dark:hover:text-slate-300 cursor-pointer "
@@ -63,11 +63,11 @@ const LowerNavbar = () => {
           <TbX size={36} className={`${showSideMenu ? "hidden" : "block"}`} />
         </div>
         <nav
-          className={`dark:text-white text-slate-600 font-semibold fixed w-1/2 h-full lg:static lg:w-full lg:h-fit lg:shadow-none shadow-[26px_-1px_25px_-25px_rgba(204,204,204,0.74)] top-28 transition-all ease-in-out duration-300 ${
+          className={`dark:text-white text-slate-600 font-semibold fixed w-1/2 h-full lg:static lg:w-fit lg:h-fit lg:shadow-none shadow-[26px_-1px_25px_-25px_rgba(204,204,204,0.74)] top-28 transition-all ease-in-out duration-300  dark:bg-slate-950 bg-gray-50  ${
             showSideMenu ? "left-[-500px]" : "left-0"
           }`}
         >
-          <ul className="flex  flex-start flex-col  gap-x-4 w-full lg:px-2 lg:flex-row lg:justify-center lg:items-center cursor-pointer">
+          <ul className="flex  items-start justify-start flex-col  gap-x-4 w-fit lg:px-2 lg:flex-row lg:items-center">
             {navbarItems &&
               navbarItems.map((navbarItem, i) => (
                 <li
@@ -81,7 +81,7 @@ const LowerNavbar = () => {
               ))}
           </ul>
         </nav>
-        <div className="font-bold text-lg sm:text-2xl flex justify-center lg:justify-start items-center w-full lg:pl-10 text-slate-700 whitespace-nowrap">
+        <div className="font-bold text-lg sm:text-2xl flex justify-center lg:justify-start items-center w-full lg:pl-10 text-slate-700 whitespace-nowrap cursor-default">
           KNECOMPUTER PROJECTS
         </div>
         <div className="flex justify-center items-center gap-x-2  pr-4 lg:pr-0 ">

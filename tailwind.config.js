@@ -26,6 +26,10 @@ module.exports = {
       '3xl': '1400px',
     },
 
+    backgroundImage: {
+      'hero-image': "url('assets/images/herobg1.jpg')",
+    }
+
   },
   darkMode: "class",
   plugins: [nextui()],
