@@ -1,3 +1,4 @@
+import CategoryContainer from "@/components/CategoryContainer/CategoryContainer";
 import HomeHeroComponent from "@/components/HomeHeroComponent/HomeHeroComponent";
 import MaxWidthContainer from "@/components/MaxWidthContainer/MaxWidthContainer";
 import NewProductsContainer from "@/components/NewProductsContainer/NewProductsContainer";
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeHeroComponent/>
       <NewProductsContainer/>
       <OtherProjectsBanner/>
+      <CategoryContainer/>
     </MaxWidthContainer>
 </>
   );
