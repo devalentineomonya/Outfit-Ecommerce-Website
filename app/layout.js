@@ -15,10 +15,10 @@ export default function RootLayout({children}) {
   return (
     <html lang="en" className='light'>
      <body className={inter.className}>
-        <Providers>
+        {/* <Providers> */}
           <Navbar/>
           {children}
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   );
