@@ -11,20 +11,24 @@ const navbarItems = [
     href: "/",
   },
   {
-    name: "Database",
-    href: "/database",
+    name: "Men",
+    href: "/men",
   },
   {
-    name: "Documentation",
-    href: "/documentation",
+    name: "Women",
+    href: "/women",
   },
   {
-    name: "Full Project",
-    href: "/full-project",
+    name: "Kids",
+    href: "/kids",
   },
   {
-    name: "About",
-    href: "/about",
+    name: "New & Featured",
+    href: "/new-and-featured",
+  },
+  {
+    name: "Gift",
+    href: "/gift",
   },
 ];
 
@@ -49,6 +53,9 @@ const LowerNavbar = () => {
     setShowSideMenu(!showSideMenu);
   }
 
+    
+
+
   return (
     <div className="h-14 w-full flex justify-center items-center dark:bg-slate-950 bg-gray-50 sticky top-0 ">
       <div className="max-w-[1400px] w-full flex justify-between items-center ">
@@ -68,25 +75,22 @@ const LowerNavbar = () => {
             showSideMenu ? "left-0" : "left-[-500px]"
           }`}
         >
-            <ul className="flex  items-start justify-start flex-col  gap-x-4 w-fit lg:px-2 lg:flex-row lg:items-center">
-              {navbarItems &&
-                navbarItems.map((navbarItem, i) => (
-                  <li
-                    key={i}
-                    className="hover:text-slate-950 dark:hover:text-slate-300 whitespace-nowrap mt-6 lg:mt-0 pl-4 lg:pl-0"
-                  >
-                    <Link
-                      href={navbarItem.href}
-                      onClick={() => toggleSidebar()}
-                    >
-                      {navbarItem.name}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
+          <ul className="flex  items-start justify-start flex-col  gap-x-4 w-fit lg:px-2 lg:flex-row lg:items-center">
+            {navbarItems &&
+              navbarItems.map((navbarItem, i) => (
+                <li
+                  key={i}
+                  className="hover:text-slate-950 dark:hover:text-slate-300 whitespace-nowrap mt-6 lg:mt-0 pl-4 lg:pl-0"
+                >
+                  <Link href={navbarItem.href} onClick={() => toggleSidebar()}>
+                    {navbarItem.name}
+                  </Link>
+                </li>
+              ))}
+          </ul>
         </nav>
         <div className="font-bold text-lg sm:text-2xl flex justify-center lg:justify-start items-center w-full lg:pl-10 text-slate-700 whitespace-nowrap cursor-default">
-          KNECOMPUTER PROJECTS
+          OUTFIT
         </div>
         <div className="flex justify-center items-center gap-x-2  pr-4 lg:pr-0 ">
           {iconItems &&

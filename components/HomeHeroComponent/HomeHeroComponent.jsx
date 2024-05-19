@@ -9,10 +9,9 @@ const HomeHeroComponent = () => {
     >
       <div className="absolute bottom-3 flex justify-center items-center w-full flex-col lg:flex-row p-2 lg:p-10 -z-10">
         <div className="w-full">
-          <h1 className="text-5xl font-bold whitespace-normal lg:whitespace-nowrap">KNECOMPUTER PROJECTS</h1>
+          <h1 className="text-5xl font-bold whitespace-normal lg:whitespace-nowrap">OUTFIT COLLECTIONS</h1>
           <p className="mt-2 text-xl font-medium">
-            Find out the best projects for a good grader. Knecomputer projects
-            Offering you quality projects
+         Find out the best outfit collections. Offering our best quality products in Outfit collections
           </p>
         </div>
         <div className="w-full h-full flex justify-start lg:justify-end items-end mt-4 lg:mt-0">
