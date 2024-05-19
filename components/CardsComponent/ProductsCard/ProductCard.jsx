@@ -6,7 +6,7 @@ const ProductCard = () => {
   return (
     <div className="w-full aspect-[9/10] cursor-pointer hover:scale-95 transition-all ease-in-out duration-300">
       <div className="relative w-full h-[80%] bg-green-20 overflow-hidden rounded-md">
-        <Image src={textImage} className="h-full" />
+        <Image src={textImage} className="h-full" alt="Image Alt" />
       </div>
       <div className="w-full h-[20%] mt-2">
         <h3 className="text-slate-950 font-bold text-xl ">Product Name</h3>

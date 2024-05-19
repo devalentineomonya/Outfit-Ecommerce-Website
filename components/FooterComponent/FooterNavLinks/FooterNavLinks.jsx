@@ -78,9 +78,9 @@ const FooterNavLinks = () => {
       {footerLinks &&
         footerLinks.map((footerLink, index) => (
           <FooterLinksContainer
+          key={index}
             categoryName={footerLink.name}
             footerLinks={footerLink.footerNavLinks}
-            key={index}
           />
         ))}
     </div>

@@ -7,9 +7,9 @@ const FooterLinksContainer = ({ categoryName, footerLinks }) => {
       <h3 className="">{categoryName}</h3>
       <ul>
         {footerLinks &&
-          footerLinks.map((footerLink) => (
+          footerLinks.map((footerLink, index) => (
             <li>
-              <Link href={footerLink.href}>{footerLink.name}</Link>
+              <Link key={index} href={footerLink.href}>{footerLink.name}</Link>
             </li>
           ))}
       </ul>

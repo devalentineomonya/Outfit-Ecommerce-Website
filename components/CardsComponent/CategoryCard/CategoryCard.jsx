@@ -5,7 +5,7 @@ import { Button } from "@nextui-org/button";
 const CategoryCard = () => {
   return (
     <div className="relative w-full aspect-[9/10] rounded-lg overflow-hidden">
-      <Image src={testImage} className="w-full h-full " />
+      <Image src={testImage} className="w-full h-full " alt="Image Alt"/>
       <div className="absolute left-5 bottom-5">
         <h1 className="font-semibold text-4xl overflow-hidden whitespace-nowrap text-ellipsis ">
           DOCUMENTATION
