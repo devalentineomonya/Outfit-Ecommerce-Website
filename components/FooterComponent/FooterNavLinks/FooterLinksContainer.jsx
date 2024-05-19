@@ -8,8 +8,8 @@ const FooterLinksContainer = ({ categoryName, footerLinks }) => {
       <ul>
         {footerLinks &&
           footerLinks.map((footerLink, index) => (
-            <li>
-              <Link key={index} href={footerLink.href}>{footerLink.name}</Link>
+            <li  key={index}>
+              <Link href={footerLink.href}>{footerLink.name}</Link>
             </li>
           ))}
       </ul>
