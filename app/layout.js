@@ -11,6 +11,7 @@ export const metadata = {
 import {Providers} from "./provider";
 import Navbar from "@/components/NavbarComponent/Navbar";
 import FooterComponent from "@/components/FooterComponent/FooterComponent";
+import FooterEnding from "@/components/FooterComponent/FooterEnding/FooterEnding";
 
 export default function RootLayout({children}) {
   return (
@@ -21,6 +22,7 @@ export default function RootLayout({children}) {
           {children}
         {/* </Providers> */}
         <FooterComponent/>
+        <FooterEnding/>
       </body>
     </html>
   );
