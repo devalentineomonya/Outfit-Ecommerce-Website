@@ -6,23 +6,23 @@ const footerLinks = [
     name: "Products",
     footerNavLinks: [
       {
-        name: "Home",
+        name: "TShirt",
         href: "/",
       },
       {
-        name: "Documentation",
+        name: "Jacket",
         href: "/documentation",
       },
       {
-        name: "Databases",
+        name: "Shoes",
         href: "/databases",
       },
       {
-        name: "Full Projects",
+        name: "Trousers",
         href: "/full-projects",
       },
       {
-        name: "Logo and Designs",
+        name: "SunGlasses",
         href: "/logo-and-design",
       },
     ],
@@ -31,19 +31,19 @@ const footerLinks = [
     name: "Categories",
     footerNavLinks: [
       {
-        name: "Current Projects",
+        name: "Men",
         href: "/current",
       },
       {
-        name: "Past Projects",
+        name: "Women",
         href: "/past-projects",
       },
       {
-        name: "Top Projects",
+        name: "Kids",
         href: "/top",
       },
       {
-        name: "Most Requested Project",
+        name: "Gifts",
         href: "/most-requested",
       },
     ],
@@ -52,23 +52,20 @@ const footerLinks = [
     name: "Social Media",
     footerNavLinks: [
       {
-        name: "Facebook",
+        name: "Instagram",
         href: "/",
       },
       {
-        name: "WhatsApp",
+        name: "Facebook",
         href: "/documentation",
       },
       {
-        name: "Instagram",
+        name: "Youtube",
         href: "/databases",
       },
+   
       {
-        name: "Other Website",
-        href: "/full-projects",
-      },
-      {
-        name: "Youtube",
+        name: "Tweeter",
         href: "/logo-and-design",
       },
     ],
