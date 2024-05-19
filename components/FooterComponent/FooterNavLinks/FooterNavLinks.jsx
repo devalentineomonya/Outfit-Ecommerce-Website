@@ -74,10 +74,10 @@ const footerLinks = [
 
 const FooterNavLinks = () => {
   return (
-    <div className="flex flex-1 w-1/2  bg-gray-50 p-3">
+    <div className="flex flex-1 w-full lg:w-1/2  bg-gray-50 p-3 justify-around items-start pl-20">
       {footerLinks &&
         footerLinks.map((footerLink, index) => (
-          <FooterLinksContainer
+          <FooterLinksContainer 
           key={index}
             categoryName={footerLink.name}
             footerLinks={footerLink.footerNavLinks}

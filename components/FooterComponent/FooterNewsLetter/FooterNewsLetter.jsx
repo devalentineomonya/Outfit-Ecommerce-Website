@@ -3,7 +3,7 @@ import React from "react";
 
 const FooterNewsLetter = () => {
   return (
-    <div className="flex flex-1 w-1/2 flex-col  bg-gray-50 p-3">
+    <div className="flex flex-1 w-full lg:w-1/2 flex-col  bg-gray-50 p-3">
       <h1 className="text-5xl text-slate-900 font-bold">KNECOMP</h1>
       <p p className="text-slate-700 font-semibold ">
         Sign up to our news letter to get update when we upload or make any
